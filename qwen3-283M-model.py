@@ -7,6 +7,8 @@ from tqdm.auto import tqdm
 from datasets import load_dataset
 from transformers import AutoTokenizer
 from contextlib import nullcontext
+from torch.optim.lr_scheduler import LinearLR, SequentialLR, CosineAnnealingLR
+import matplotlib.pyplot as plt
 
 # Load Qwen3 tokenizer
 try:
@@ -309,7 +311,6 @@ ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=
 torch.set_default_device(device)
 torch.manual_seed(42)
 
-from torch.optim.lr_scheduler import LinearLR, SequentialLR, CosineAnnealingLR
 
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, betas=(0.9, 0.95), weight_decay=0.1, eps=1e-9)
 
@@ -321,7 +322,7 @@ scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
 
 # Training Loop
 best_val_loss = float('inf')
-best_model_params_path = "best_model_params.pt"
+best_model_params_path = "qwen3_model.pt"
 train_loss_list, validation_loss_list = [], []
 
 model = model.to(device)
@@ -354,8 +355,6 @@ for epoch in tqdm(range(max_iters)):
     scheduler.step()
 
 # Plot training and validation loss
-import matplotlib.pyplot as plt
-
 train_loss_list_converted = [i.cpu().detach() for i in train_loss_list]
 validation_loss_list_converted = [i.cpu().detach() for i in validation_loss_list]
 
