@@ -49,8 +49,8 @@ We recommend running all examples through Google Colab for the easiest setup. Al
 |---|---|
 | Chapter 0: Building from Scratch | |
 | Chapter 1: Understanding Neural Networks: The Foundations of Modern AI | |
-| Chapter 2: PyTorch Fundamentals: The Building Blocks of Deep Learning | |
-| Chapter 3: GPUs: The Computational Engine Behind LLM Training | |
+| Chapter 2: PyTorch Fundamentals: The Building Blocks of Deep Learning | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1tfuMwnzsfZQ4ptFb7rxjLPowviyGZOKw?usp=sharing) |
+| Chapter 3: GPUs: The Computational Engine Behind LLM Training | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ku7QjGNO_ZuksHXd6UidKySS-TgtgWC4?usp=sharing) |
 | Chapter 4: Where Intelligence Comes From: A Deep Look at Data | |
 | Chapter 5: Understanding Language Models: From Foundations to Small-Scale Design | |
 | Chapter 6: Tokenizer: How Language Models Break Text into Meaningful Units | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13o8x0AVXUgiMsr85kI9pGGTqLuY4JUOZ?usp=sharing) |
