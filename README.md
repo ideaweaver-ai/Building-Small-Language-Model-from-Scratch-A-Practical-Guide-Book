@@ -48,7 +48,7 @@ We recommend running all examples through Google Colab for the easiest setup. Al
 | Chapter | Notebook |
 |---|---|
 | Chapter 0: Building from Scratch | |
-| Chapter 1: Understanding Neural Networks: The Foundations of Modern AI | |
+| Chapter 1: Understanding Neural Networks: The Foundations of Modern AI | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1i1hacZZUGzoRE3luDE2KtS--honPnoa8?usp=sharing)|
 | Chapter 2: PyTorch Fundamentals: The Building Blocks of Deep Learning | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1tfuMwnzsfZQ4ptFb7rxjLPowviyGZOKw?usp=sharing) |
 | Chapter 3: GPUs: The Computational Engine Behind LLM Training | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ku7QjGNO_ZuksHXd6UidKySS-TgtgWC4?usp=sharing) |
 | Chapter 4: Where Intelligence Comes From: A Deep Look at Data | |
